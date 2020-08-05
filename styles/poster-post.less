@@ -1,0 +1,233 @@
+.poster-post {
+  position: relative;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 535px) {
+    margin-left: 16px;
+  }
+
+  &__title {
+    position: absolute;
+    left: 85px;
+    top: 0;
+
+    color: #FFFFFF;
+    font-family: Playfair Display, serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 535px) {
+      font-size: 20px;
+      line-height: 150%;
+    }
+
+    &--black {
+      color: #000000;
+    }
+
+  }
+
+  &__image {
+    width: 370px;
+    height: 479px;
+
+    z-index: -1000;
+
+    @media screen and (max-width: 535px) {
+      width: 288px;
+      height: 310px;
+    }
+  }
+
+  &__look {
+    position: absolute;
+    left: 100px;
+    top: 370px;
+    display: inline-block;
+    padding: 15px 60px 15px 30px;
+
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 3px solid #FF7931;
+    background-color: #000000;
+
+    @media screen and (max-width: 535px) {
+      left: 70px;
+      top: 230px;
+    }
+
+    &::after {
+      position: absolute;
+      content: url("../img/arrow-2.png");
+      right: 37px;
+      top: 13px;
+    }
+
+    &--orange {
+      background-color: #FF7931;
+    }
+  }
+
+  &--wide {
+
+    margin-left: 0;
+    margin-top: 60px;
+
+    @media screen and (max-width: 535px) {
+      width: 100%;
+
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .poster-post__title {
+      top: 30px;
+      left: 140px;
+
+      @media screen and (max-width: 535px) {
+        font-size: 20px;
+        line-height: 23px;
+        left: 60px;
+      }
+    }
+
+    .poster-post__image {
+      width: 766px;
+      height: 165px;
+
+      @media screen and (max-width: 535px) {
+        width: 318.34px;
+      }
+    }
+
+    .poster-post__look {
+      top: 55px;
+      left: 520px;
+
+      @media screen and (max-width: 535px) {
+        top: 95px;
+        left: 80px;
+      }
+    }
+  }
+
+  &--small {
+
+    @media screen and (max-width: 535px) {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .poster-post__image {
+      width: 270px;
+      height: 107px;
+
+      transition: 1s;
+    }
+
+    .poster-post__look {
+      display: none;
+
+      @media screen and (max-width: 535px) {
+        display: inline-block;
+        top: 75px;
+        left: 85px;
+        padding: 5px 15px 5px 20px;
+
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        border: 1px solid #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        opacity: 1;
+
+        &::after {
+          content: none;
+        }
+
+      }
+    }
+
+    .poster-post__title {
+      display: none;
+
+      @media screen and (max-width: 535px) {
+        display: block;
+        left: 50px;
+        top: 20px;
+
+        font-family: Raleway, serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2px;
+
+        opacity: 1;
+        z-index: 999;
+
+      }
+    }
+
+    &:hover {
+
+      .poster-post__title {
+        display: block;
+        left: 50px;
+        top: 20px;
+
+        font-family: Raleway, serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2px;
+
+        opacity: 1;
+        z-index: 999;
+      }
+
+      .poster-post__image {
+        transform: scaleY(1.3);
+      }
+
+      .poster-post__look {
+        display: inline-block;
+        top: 75px;
+        left: 85px;
+        padding: 5px 15px 5px 20px;
+
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        border: 1px solid #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        opacity: 1;
+
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}

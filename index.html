@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Culture</title>
+    <link rel="stylesheet" href="style.less">
+</head>
+<body>
+<header class="header">
+    <button class="header__burger">&#9776;</button>
+    <button class="header__close close">&#10006;</button>
+    <div class="container">
+
+        <div class="header__logo logo">
+            <p class="logo__text">Новости культуры</p>
+        </div>
+
+        <nav class="header__navigation navigation close">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link">НОВОСТИ</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">ОБЗОРЫ</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">МУЗЫКА</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">АРХИТЕКТУРА</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">КИНО</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">ТЕАТР</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">ЛИТЕРАТУРА</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">РЕЛИГИЯ</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">ЖИВОПИСЬ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__new">
+                <p class="promo__text">новое</p>
+            </div>
+            <h1 class="promo__title">Подводный отель</h1>
+            <div class="wrapper">
+                <button class="promo__previous">Предыдущая</button>
+                <div class="wrapper">
+                    <button class="promo__arrow-previous">
+                        <img class="promo__arrow-image-previous" src="img/arrow-4.png" alt="button">
+                    </button>
+                    <p class="promo__line">|</p>
+                    <button class="promo__arrow-next">
+                        <img class="promo__arrow-image-next" src="img/arrow-4.png" alt="button">
+                    </button>
+                </div>
+                <button class="promo__next">Следущая</button>
+            </div>
+            <p class="promo__description">Как известно, Дубай – город контрастов. Самые революционные
+                <br>и фантастические мечты архитекторов способен воплотить в жизнь
+                <br>этот мегаполис, построенный на нефти и за
+                счет нефти
+            </p>
+            <div class="promo__rounded-pagination rounded-pagination">
+                <button class="rounded-pagination__button rounded-pagination__button--active"></button>
+                <button class="rounded-pagination__button"></button>
+                <button class="rounded-pagination__button"></button>
+                <button class="rounded-pagination__button"></button>
+                <button class="rounded-pagination__button"></button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            <div class="content">
+                <section class="news">
+                    <h2 class="news__title">НОВОСТИ</h2>
+                    <div class="news-wrapper">
+                        <div class="news__post news-post--main">
+                            <a href="" class="news-post__link">
+                                <img src="img/news-1.png" alt="" class="news-post__image--main">
+                            </a>
+                            <h3 class="news-post__title--main">Новости культуры России и всего мира</h3>
+                            <p class="news-post__text--main">В минувшие выходные в Москве на фестивале «Оберег»
+                                вручили первую премию Russian World Music Awards</p>
+                        </div>
+                        <div class="news-posts__group">
+                            <div class="news__post news-post">
+                                <a href="" class="news-post__link">
+                                    <img src="img/news-2.png" alt="" class="news-post__image">
+                                </a>
+                                <div>
+                                    <h3 class="news-post__title">Открытие нового памятника Евгению Леонову</h3>
+                                    <p class="news-post__text">10 сентября в 15:00 был открыт памятник писателю</p>
+                                </div>
+                            </div>
+                            <div class="news__post news-post--selected">
+                                <a href="" class="news-post__link">
+                                    <img src="img/news-3.png" alt="" class="news-post__image">
+                                </a>
+                                <div>
+                                    <h3 class="news-post__title">Беседы с писателями</h3>
+                                    <p class="news-post__text">Русские писатели говорят о важности искусства</p>
+                                </div>
+                            </div>
+                            <div class="news__post news-post">
+                                <a href="" class="news-post__link">
+                                    <img src="img/news-4.png" alt="" class="news-post__image">
+                                </a>
+                                <div>
+                                    <h3 class="news-post__title">День и ночь св. Патрика: встреча старых друзей</h3>
+                                    <p class="news-post__text">Не Джойсом единым живет Ирландия!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="reviews">
+                    <h2 class="reviews__title">ОБЗОРЫ</h2>
+                    <div class="reviews-wrapper">
+                        <div class="reviews__post reviews-post">
+                            <a href="" class="reviews-post__link">
+                                <img src="img/reviews-1.png" alt="" class="reviews-post__image">
+                            </a>
+                            <h3 class="reviews-post__title">«Шальные годы» Монпарнаса</h3>
+                            <p class="reviews-post__description">
+                                В Музее изобразительных искусств имени Пушкина с 29 сентября
+                                по 29 ноября проходит выставка «Шальные годы Монпарнаса»
+                            </p>
+                        </div>
+                        <div class="reviews__post reviews-post reviews-post--selected">
+                            <a href="" class="reviews-post__link">
+                                <img src="img/reviews-2.png" alt="" class="reviews-post__image">
+                            </a>
+                            <div class="reviews-post__statistic">
+                                <p class="reviews-post__views">37</p>
+                                <p class="reviews-post__comments">2</p>
+                            </div>
+                            <h3 class="reviews-post__title">Анатомия за 30 секунд</h3>
+                            <p class="reviews-post__description">
+                                Сейчас, когда мир открыт нараспашку для человека
+                                и его познавательных изысканий, интерес
+                                к научно-популярной литературе заметно вырос
+                            </p>
+                        </div>
+                        <div class="reviews__post reviews-post">
+                            <a href="" class="reviews-post__link">
+                                <img src="img/reviews-3.png" alt="" class="reviews-post__image">
+                            </a>
+                            <h3 class="reviews-post__title">Русские балетные сезоны</h3>
+                            <p class="reviews-post__description">
+                                В Новом Иерусалиме стартовал необычный культурно-развлекательный
+                                спектакль, который покажут в новом театре</p>
+                        </div>
+                        <div class="reviews__post reviews-post">
+                            <a href="" class="reviews-post__link">
+                                <img src="img/reviews-4.png" alt="" class="reviews-post__image">
+                            </a>
+                            <h3 class="reviews-post__title">Сферические чудаки</h3>
+                            <p class="reviews-post__description">
+                                Корреспондентам «Культурного обозревателя» посчастливилось
+                                побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reviews__pagination pagination">
+                        <div class="pagination__previous">
+                            <button class="pagination__previous-button"></button>
+                        </div>
+                        <div class="pagination__numbers">
+                            <button class="pagination__number--selected">1</button>
+                            <button class="pagination__number">2</button>
+                            <button class="pagination__number">3</button>
+                            <button class="pagination__number">4</button>
+                            <button class="pagination__number">5</button>
+                            <button class="pagination__number">.....</button>
+                            <button class="pagination__number">35</button>
+                        </div>
+                        <div class="pagination__next">
+                            <button class="pagination__next-button"></button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="posters__post poster-post poster-post--wide">
+                <img src="img/posters-4.png" alt="" class="poster-post__image">
+                <div class="poster-post__wrapper">
+                    <h3 class="poster-post__title">Ох, уж этот балет</h3>
+                    <a href="#" class="poster-post__look">смотреть</a>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="posters__post poster-post">
+                    <h3 class="poster-post__title poster-post__title--black">ВОЗДУШНЫЕ
+                        <br>ШАРЫ</h3>
+                    <img src="img/posters-1.png" alt="" class="poster-post__image">
+                    <a href="#" class="poster-post__look poster-post__look--orange">смотреть</a>
+                </div>
+                <div class="posters__post poster-post">
+                    <h3 class="poster-post__title">НЕОБЫЧНАЯ
+                        <br>ФОТОСЕССИЯ</h3>
+                    <img src="img/posters-2.png" alt="" class="poster-post__image">
+                    <a href="#" class="poster-post__look">смотреть</a>
+                </div>
+                <div class="posters__post poster-post">
+                    <h3 class="poster-post__title">Выставка
+                        <br>птиц</h3>
+                    <img src="img/posters-3.png" alt="" class="poster-post__image">
+                    <a href="#" class="poster-post__look">смотреть</a>
+                </div>
+            </div>
+            <section class="posters-line">
+                <div class="posters-line__wrapper">
+                    <div class="posters-line__previous">
+                        <button class="posters-line__previous-button"></button>
+                    </div>
+                    <div class="posters__post poster-post poster-post--small">
+                        <h3 class="poster-post__title">КАК все успевать</h3>
+                        <img src="img/posters-5.png" alt="" class="poster-post__image">
+                        <a href="#" class="poster-post__look">смотреть</a>
+                    </div>
+                    <div class="posters__post poster-post poster-post--small">
+                        <h3 class="poster-post__title">КАК все успевать</h3>
+                        <img src="img/posters-6.png" alt="" class="poster-post__image">
+                        <a href="#" class="poster-post__look">смотреть</a>
+                    </div>
+                    <div class="posters__post poster-post poster-post--small">
+                        <h3 class="poster-post__title">КАК все успевать</h3>
+                        <img src="img/posters-7.png" alt="" class="poster-post__image">
+                        <a href="#" class="poster-post__look">смотреть</a>
+                    </div>
+                    <div class="posters__post poster-post poster-post--small">
+                        <h3 class="poster-post__title poster-post__title--black">КАК все успевать</h3>
+                        <img src="img/posters-8.png" alt="" class="poster-post__image">
+                        <a href="#" class="poster-post__look">смотреть</a>
+                    </div>
+                    <div class="posters-line__next">
+                        <button class="posters-line__next-button"></button>
+                    </div>
+                </div>
+
+                <div class="posters-line__rounded-pagination rounded-pagination rounded-pagination--black">
+                    <button class="rounded-pagination__button rounded-pagination__button--active"></button>
+                    <button class="rounded-pagination__button"></button>
+                    <button class="rounded-pagination__button"></button>
+                    <button class="rounded-pagination__button"></button>
+                    <button class="rounded-pagination__button"></button>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__logo logo">
+            <p class="logo__text">Новости культуры</p>
+        </div>
+
+        <nav class="footer__navigation navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link">НОВОСТИ</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">ОБЗОРЫ</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">МУЗЫКА</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">АРХИТЕКТУРА</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">КИНО</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">ТЕАТР</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">ЛИТЕРАТУРА</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">РЕЛИГИЯ</a></li>
+                <li class="navigation__item"><a href="" class="navigation__link">ЖИВОПИСЬ</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

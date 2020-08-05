@@ -1,0 +1,59 @@
+.navigation {
+  margin-bottom: 35px;
+
+  @media screen and (max-width: 535px) {
+  padding-top: 40px;
+}
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+
+    @media screen and (max-width: 535px) {
+      display: block;
+      padding-left: 0;
+
+      text-align: center;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @media screen and (max-width: 535px) {
+      margin-bottom: 20px;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      padding-left: 16px;
+
+      color: #000000;
+
+      background-color: #F9F9FC;
+    }
+
+    &::after {
+      @media screen and (max-width: 535px) {
+        position: absolute;
+        top: 20px;
+        left: 290px;
+
+        content: url("../img/arrow-5.png");
+      }
+    }
+  }
+
+  &__link {
+    padding: 10px;
+
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+      color: #FFFFFF;
+
+      background-color: #FF7931;
+    }
+  }
+}

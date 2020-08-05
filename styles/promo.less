@@ -1,0 +1,99 @@
+.promo {
+  margin-bottom: 80px;
+
+  color: #FFFFFF;
+  text-align: center;
+
+  background-image: url("../img/promo.png");
+  background-size: cover;
+
+  @media screen and (max-width: 535px) {
+    background-position: center center;
+  }
+
+  &__new {
+    padding-top: 65px;
+
+    @media screen and (max-width: 535px) {
+      padding-top: 25px;
+    }
+  }
+
+  &__text {
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 5px 15px;
+
+    text-transform: uppercase;
+
+    background-color: #FF7931;
+  }
+
+  &__title {
+    font-size: 72px;
+    line-height: 85px;
+
+    @media screen and (max-width: 535px) {
+      font-size: 30px;
+      line-height: 150%;
+    }
+  }
+
+  &__next, &__previous, &__arrow-next, &__arrow-previous {
+    margin: 0 15px;
+
+    color: #FFFFFF;
+
+    background: none;
+    border: none;
+
+    z-index: 1000;
+    cursor: pointer;
+
+    @media screen and (max-width: 535px) {
+      display: none;
+    }
+  }
+
+  &__arrow-image-next {
+    transform: rotate(180deg);
+  }
+
+  &__next {
+    &::before {
+      content: "________";
+      margin-right: 10px;
+    }
+  }
+
+  &__previous {
+    &::after {
+      content: "________";
+      margin-left: 10px;
+    }
+  }
+
+  &__line {
+    font-size: 42px;
+
+    @media screen and (max-width: 535px) {
+      display: none;
+    }
+  }
+
+  &__description {
+    margin-top: 65px;
+    padding-bottom: 50px;
+
+    line-height: 150%;
+
+    @media screen and (max-width: 535px) {
+      margin-top: 20px;
+
+      font-size: 14px;
+      line-height: 150%;
+    }
+
+  }
+}
